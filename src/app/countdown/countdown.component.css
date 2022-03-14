@@ -1,0 +1,42 @@
+.countdown-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.countdown-element {
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  flex-basis: 100%;
+}
+
+.countdown-element p {
+  font-weight: bold;
+}
+
+.countdown-container p {
+  color: var(--clr-white);
+  text-align: center;
+  font-size: 1rem;
+  font-style: bold;
+  text-transform: capitalize;
+  position: relative;
+}
+
+.countdown-container p:nth-child(1)::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* center hack  */
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background: #000000;
+  opacity: 0.2;
+}

@@ -1,0 +1,17 @@
+.contact-container .underline {
+  margin-left: 0;
+}
+
+.tel {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+@media screen and (min-width: 950px) {
+  .contacts-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+}

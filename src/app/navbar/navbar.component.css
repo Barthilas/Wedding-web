@@ -1,0 +1,152 @@
+/* small screen */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: var(--clr-white);
+  box-shadow: var(--dark-shadow);
+  /* prevent navbar from disappearing */
+  z-index: 2;
+}
+
+.nav-title h3 {
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+.nav-title span {
+  color: var(--clr-primary-5);
+}
+
+.nav-icons {
+  display: none;
+}
+
+.nav-center {
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.nav-toggle {
+  background: transparent;
+  /* or none */
+  border: transparent;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--clr-primary-5);
+  transition: var(--transition);
+}
+
+.nav-toggle:hover {
+  transform: scale(1.2);
+}
+
+.nav-link {
+  display: block;
+  padding: 1rem 2rem;
+  text-transform: capitalize;
+  letter-spacing: var(--spacing);
+  transition: var(--transition);
+  color: var(--clr-grey-1);
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.nav-link:hover {
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-8);
+  /* bigger than 2 to make the push text to right, based on previous value */
+  padding-left: 2.5rem;
+}
+
+/* 280px */
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: var(--transition);
+  /* or use display:none to truly remove it from DOM
+  the solution above makes it invisible, but it still exist */
+
+  /* WHY NOT USE VISIBILITY:HIDDEN? */
+  /* visibility: hidden; */
+}
+
+.show-links {
+  height: 280px;
+}
+/* end of small screen */
+
+/* big scren */
+@media screen and (min-width: 992px) {
+  .navbar {
+    padding: 1rem 2rem;
+  }
+  /* hide toggle button  */
+  .nav-toggle {
+    display: none;
+  }
+  .nav-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* optional */
+    flex-wrap: wrap;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+  }
+  .nav-header {
+    padding: 0 0;
+  }
+  .nav-link {
+    padding: 0 0;
+    margin-right: 0.7rem;
+    font-weight: 700;
+  }
+  .nav-link:hover {
+    padding: 0;
+    color: var(--clr-primary-5);
+    background: transparent;
+  }
+
+  .nav-icons {
+    display: flex;
+  }
+
+  .nav-icon {
+    margin-right: 0.7rem;
+    color: var(--clr-primary-5);
+    font-size: 1.2rem;
+    transition: var(--transition);
+  }
+  .nav-icon:hover {
+    color: var(--clr-primary-8);
+  }
+
+  /* underline on hover */
+  .nav-links > li > a {
+    position: relative;
+  }
+
+  .nav-links > li > a:hover::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0;
+    left: 0;
+    bottom: 0px; /*Change this to increase/decrease distance*/
+    border-bottom: 2px solid #000;
+  }
+  /* end of undeline hover */
+}
+/* end of big screen */

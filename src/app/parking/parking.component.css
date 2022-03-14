@@ -1,0 +1,18 @@
+.parking {
+  background: var(--clr-grey-10);
+}
+.parking-container h3{
+  text-align: center;
+}
+
+.parkmap-img-container {
+  margin-top: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .section-parking {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}

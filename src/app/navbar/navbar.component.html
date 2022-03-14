@@ -1,0 +1,53 @@
+<!-- <fa-icon [icon]="faBars"></fa-icon> -->
+<!-- [ngClass]="collapsed ? 'show-links' : ''" -->
+
+<header id="home">
+  <!-- navbar -->
+  <nav class="navbar">
+    <div class="nav-center">
+      <div class="nav-header">
+        <div class="nav-title">
+          <h3><span>[S]</span>vatba <span>2022</span></h3>
+        </div>
+        <button type="button" class="nav-toggle" id="nav-toggle" (click)="onShowNav($event)">
+          <fa-icon [icon]="faBars"></fa-icon>
+        </button>
+      </div>
+
+      <ul class="nav-links" id="nav-links" [ngClass]="collapsed ? 'show-links' : ''">
+        <li>
+          <a href="#home" class="nav-link scroll-link">Hlavní</a>
+        </li>
+        <li>
+          <a href="#home" class="nav-link scroll-link">Obecné</a>
+        </li>
+        <li>
+          <a href="#places" class="nav-link scroll-link">Místo</a>
+        </li>
+        <li>
+          <a href="#hotels" class="nav-link scroll-link">Ubytování</a>
+        </li>
+        <li>
+          <a href="#parking" class="nav-link scroll-link">Parkování</a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link scroll-link">Kontakt</a>
+        </li>
+      </ul>
+
+      <ul class="nav-icons">
+        <li>
+          <a href="#" target="_blank" class="nav-icon">
+            <fa-icon [icon]="faFacebook"></fa-icon>
+          </a>
+        </li>
+        <li>
+          <a href="#" target="_blank" class="nav-icon">
+            <fa-icon [icon]="faWhatsApp"></fa-icon>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <app-hero></app-hero>
+</header>

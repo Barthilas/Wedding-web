@@ -1,0 +1,25 @@
+<article class="hotel-card">
+  <div class="hotel-img-container">
+    <img src="{{img}}" class="hotel-img" alt="" />
+  </div>
+  <div class="hotel-info">
+    <h4>{{title}}</h4>
+    <p>
+      {{text}}
+    </p>
+    <div class="hotel-footer">
+      <p>
+        <span
+          ><fa-icon [icon]="faMap"></fa-icon>
+          {{address}}
+        </span>
+      </p>
+      <p>
+        <span
+          ><fa-icon [icon]="faPhone"></fa-icon>
+          {{contact}}
+        </span>
+      </p>
+    </div>
+  </div>
+</article>

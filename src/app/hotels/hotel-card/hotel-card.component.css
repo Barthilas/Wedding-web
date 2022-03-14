@@ -1,0 +1,75 @@
+.hotel-card {
+  transition: var(--transition);
+  background: var(--clr-grey-10);
+  box-shadow: var(--light-shadow);
+  margin-bottom: 2rem;
+}
+
+.hotel-card:hover {
+  box-shadow: var(--dark-shadow);
+  transform: scale(1.02);
+}
+
+.hotel-img-container {
+  position: relative;
+}
+.hotel-img {
+  height: 15rem;
+  object-fit: cover;
+}
+.hotel-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-primary-8);
+  margin-bottom: 0;
+  color: var(--clr-primary-1);
+  text-transform: capitalize;
+  padding: 0.25rem 0.5rem;
+}
+
+.hotel-info {
+  padding: 1.25rem 1.5rem;
+}
+
+.hotel-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hotel-footer p {
+  line-height: 0;
+  margin-bottom: 0;
+  text-transform: capitalize;
+  color: var(--clr-primary-5);
+}
+
+.hotel-btn {
+  /* can be done because its display-block */
+  /* else use flex */
+  text-align: center;
+}
+
+/* extra design day is next to title */
+.hotel-title {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.hotel-title p, h4
+{
+  margin: 0.75rem;
+  line-height: 1.25;
+}
+.hotel-title p {
+  color: var(--clr-grey-7);
+}
+
+/* three column layout
+@media screen and (min-width: 1170px) {
+  .hotel-card {
+    flex: 0 0 calc(calc(100% / 3) - 2rem)
+  }
+} */

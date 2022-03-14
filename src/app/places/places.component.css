@@ -1,0 +1,31 @@
+.places {
+  background: var(--clr-grey-10);
+}
+
+.place-container {
+  margin-top: 1rem;
+}
+
+.place-container .underline {
+  margin-left: 0;
+}
+
+.place-container p {
+  margin-bottom: 0.5rem;
+}
+
+.address, .weblink{
+  display: flex;
+  gap: 5px;
+}
+
+@media screen and (min-width: 907px) {
+  .places-container{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .place-container {
+    flex: 50%;
+  }
+}

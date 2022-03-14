@@ -1,0 +1,10 @@
+@media screen and (min-width: 768px) {
+  .hotel-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .hotel-1, .hotel-2 {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
