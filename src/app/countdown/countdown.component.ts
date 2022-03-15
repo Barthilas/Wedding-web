@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CountdownComponent implements OnInit {
 
-  private endDate = new Date('march 24, 2022 15:30:00').getTime();
+  private endDate = new Date('may 28, 2022 13:00:00').getTime();
   data: DateData
   expired = false;
 

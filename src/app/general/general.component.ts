@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { faMale, faFemale, faCampground } from '@fortawesome/free-solid-svg-icons';
+import { faMale, faFemale, faCampground, faMapMarkerAlt, faScroll } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-general',
@@ -11,6 +11,8 @@ export class GeneralComponent implements OnInit {
   faMale = faMale;
   faFemale = faFemale;
   faCampground = faCampground;
+  faMapMarkerAlt = faMapMarkerAlt;
+  faScroll = faScroll;
 
   constructor() { }
 
