@@ -48,5 +48,67 @@
   }
   .hero-banner p {
     max-width: 45rem;
+    animation: slideFromRight 5s ease-in-out 1;
+  }
+
+  .hero-banner h1 {
+    animation: slideFromLeft 5s ease-in-out 1;
+  }
+
+  .hero-btn
+  {
+    animation: show 5s ease-in-out 1;
+  }
+}
+
+/* animations */
+@keyframes slideFromRight {
+  0% {
+    transform: translateX(1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(-200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes slideFromLeft {
+  0% {
+    transform: translateX(-1000px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateX(200px);
+    opacity: 0.5;
+  }
+  75% {
+    transform: translateX(-50px);
+    opacity: 0.75;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+@keyframes show {
+  0% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.8);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }

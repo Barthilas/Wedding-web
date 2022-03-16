@@ -10,6 +10,9 @@ Fonts
 Variables
 ===============
 */
+html {
+  scroll-behavior: smooth;
+}
 
 :root {
   /* dark shades of primary color*/
