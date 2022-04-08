@@ -9,6 +9,15 @@
   margin-top: 1.5rem;
 }
 
+.weblink{
+  display: flex;
+  gap: 5px;
+}
+
+.weblink a {
+  animation: bounce 2s ease infinite;
+}
+
 @media screen and (min-width: 768px) {
   .section-parking {
     display: grid;

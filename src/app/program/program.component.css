@@ -1,0 +1,73 @@
+
+.program-center {
+  width: 80vw;
+  max-width: 40rem;
+}
+
+.program-item {
+  border-top: 2px dashed var(--clr-primary-5);
+  margin: 0;
+  padding: 4rem 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.program p {
+  margin-bottom: 0;
+}
+
+/* number or even/odd */
+.program-item:nth-child(even) {
+  border-left: 2px dashed var(--clr-primary-5);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  /* fix the borders hack -> make the item smaller */
+  margin-right: 2rem;
+  padding-right: 0;
+}
+
+.program-item:nth-child(odd) {
+  border-right: 2px dashed var(--clr-primary-5);
+  border-top-right-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+  /* fix the borders hack -> make the item smaller */
+  margin-left: 2rem;
+  padding-left: 0;
+}
+
+.program-item:first-child {
+  border-top: 0;
+  border-top-right-radius: 0;
+}
+.program-item:last-child {
+  border-bottom-left-radius: 0;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 0;
+  background: var(--clr-primary-5);
+  width: 2rem;
+  height: 2rem;
+  /* vs padding -> use width, height */
+  border-radius: 50%;
+  /* or use grid */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+  font-weight: bold;
+}
+
+.program-item:nth-child(even) .number {
+  left: 0;
+}
+.program-item:nth-child(odd) .number {
+  right: 0;
+  /* reset the position from general style */
+  transform: translate(50%, -50%);
+}

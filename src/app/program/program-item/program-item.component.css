@@ -1,0 +1,28 @@
+.program-item {
+  border-top: 2px dashed var(--clr-primary-5);
+  margin: 0;
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.program p {
+  margin-bottom: 0;
+}
+
+.number {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin-bottom: 0;
+  background: var(--clr-primary-5);
+  width: 2rem;
+  height: 2rem;
+  /* vs padding -> use width, height */
+  border-radius: 50%;
+  /* or use grid */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+  font-weight: bold;
+}

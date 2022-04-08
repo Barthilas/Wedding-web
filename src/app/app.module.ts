@@ -16,6 +16,8 @@ import { PlacesComponent } from './places/places.component';
 import { FooterComponent } from './footer/footer.component';
 import { ContactsComponent } from './contacts/contacts.component';
 import { GeneralComponent } from './general/general.component';
+import { ProgramComponent } from './program/program.component';
+import { ProgramItemComponent } from './program/program-item/program-item.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +33,8 @@ import { GeneralComponent } from './general/general.component';
     FooterComponent,
     ContactsComponent,
     GeneralComponent,
+    ProgramComponent,
+    ProgramItemComponent,
   ],
   imports: [
     BrowserModule,

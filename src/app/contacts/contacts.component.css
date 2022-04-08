@@ -8,10 +8,14 @@
   gap: 10px;
 }
 
+.notice span {
+  margin-left: 1rem;
+  font-weight: bolder;
+}
+
 @media screen and (min-width: 950px) {
   .contacts-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-
 }

@@ -81,12 +81,12 @@
 }
 
 .show-links {
-  height: 280px;
+  height: auto;
 }
 /* end of small screen */
 
 /* big scren */
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1100px) {
   .navbar {
     padding: 1rem 2rem;
   }

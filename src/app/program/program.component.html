@@ -1,0 +1,15 @@
+<section class="section program" id="program">
+  <div class="section-title">
+    <h2>Program</h2>
+    <div class="underline"></div>
+  </div>
+  <div class="section-center program-center">
+    <article *ngFor="let program of programs let i=index;" class="program-item">
+      <h4>{{program.time}}</h4>
+      <p>
+        {{program.text}}
+      </p>
+      <span class="number">{{i}}</span>
+    </article>
+  </div>
+</section>

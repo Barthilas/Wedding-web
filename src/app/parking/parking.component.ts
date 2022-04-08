@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faLink } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-parking',
@@ -6,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./parking.component.css']
 })
 export class ParkingComponent implements OnInit {
+
+
+  faLink = faLink;
 
   constructor() { }
 

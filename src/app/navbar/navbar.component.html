@@ -14,12 +14,15 @@
         </button>
       </div>
 
-      <ul class="nav-links" id="nav-links" [ngClass]="collapsed ? 'show-links' : ''">
+      <ul (click)="onShowNav($event)" class="nav-links" id="nav-links" [ngClass]="collapsed ? 'show-links' : ''">
         <li>
           <a href="#home" class="nav-link scroll-link">Hlavní</a>
         </li>
         <li>
           <a href="#general" class="nav-link scroll-link">Obecné</a>
+        </li>
+        <li>
+          <a href="#program" class="nav-link scroll-link">Program</a>
         </li>
         <li>
           <a href="#places" class="nav-link scroll-link">Místo</a>
